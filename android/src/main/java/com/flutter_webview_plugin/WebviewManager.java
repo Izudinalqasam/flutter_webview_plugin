@@ -391,8 +391,7 @@ class WebviewManager {
         webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(supportMultipleWindows);
 
         webView.getSettings().setSupportMultipleWindows(supportMultipleWindows);
-
-        webView.getSettings().setAppCacheEnabled(appCacheEnabled);
+        webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
 
         webView.getSettings().setAllowFileAccessFromFileURLs(allowFileURLs);
         webView.getSettings().setAllowUniversalAccessFromFileURLs(allowFileURLs);
